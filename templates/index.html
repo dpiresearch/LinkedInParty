@@ -158,6 +158,20 @@
             box-shadow: 0 4px 12px rgba(238, 90, 36, 0.3);
         }
 
+        .btn-payment-alt {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-decoration: none;
+            display: inline-block;
+            transition: all 0.3s ease;
+        }
+
+        .btn-payment-alt:hover {
+            background: linear-gradient(135deg, #5a6fd8 0%, #6a4c93 100%);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
+        }
+
         .guests-grid {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -542,6 +556,9 @@
                 <button class="btn btn-primary" id="backToUploadBtn" style="margin-left: 10px;">Back to Upload</button>
                 <a href="https://buy.stripe.com/3cI3cwc7Rasl18U4ToeAg00" target="_blank" class="btn btn-payment" style="margin-left: 10px;">
                     💳 Upgrade to Pro
+                </a>
+                <a href="https://buy.stripe.com/4gM14odbVasl5pa99EeAg01" target="_blank" class="btn btn-payment-alt" style="margin-left: 10px;">
+                    🚀 Premium Plan
                 </a>
             </div>
         </div>
