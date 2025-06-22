@@ -144,6 +144,20 @@
             background: #1e7e34;
         }
 
+        .btn-payment {
+            background: linear-gradient(135deg, #ff6b6b 0%, #ee5a24 100%);
+            color: white;
+            text-decoration: none;
+            display: inline-block;
+            transition: all 0.3s ease;
+        }
+
+        .btn-payment:hover {
+            background: linear-gradient(135deg, #ee5a24 0%, #d63031 100%);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(238, 90, 36, 0.3);
+        }
+
         .guests-grid {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -428,6 +442,14 @@
                 font-size: 0.6rem;
             }
         }
+
+        .btn-primary {
+            background: #007bff;
+        }
+
+        .btn-primary:hover {
+            background: #0056b3;
+        }
     </style>
 </head>
 <body>
@@ -517,6 +539,10 @@
 
             <div style="text-align: center; margin-top: 30px;">
                 <button class="btn btn-secondary" id="backToGuestsBtn">Back to Guest Selection</button>
+                <button class="btn btn-primary" id="backToUploadBtn" style="margin-left: 10px;">Back to Upload</button>
+                <a href="https://buy.stripe.com/3cI3cwc7Rasl18U4ToeAg00" target="_blank" class="btn btn-payment" style="margin-left: 10px;">
+                    💳 Upgrade to Pro
+                </a>
             </div>
         </div>
     </div>
@@ -738,6 +764,10 @@
 
         document.getElementById('backToGuestsBtn').addEventListener('click', () => {
             showSection('guestSection');
+        });
+
+        document.getElementById('backToUploadBtn').addEventListener('click', () => {
+            showSection('uploadSection');
         });
 
         function showSection(sectionId) {
