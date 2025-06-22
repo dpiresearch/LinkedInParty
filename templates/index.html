@@ -540,6 +540,7 @@
 
             <div style="text-align: center; margin-top: 30px;">
                 <button class="btn btn-success" id="arrangeBtn" disabled>Arrange Tables</button>
+                <button class="btn btn-secondary" id="backToHomeBtn" style="margin-left: 10px;">Back to Home</button>
             </div>
         </div>
 
@@ -784,6 +785,10 @@
         });
 
         document.getElementById('backToUploadBtn').addEventListener('click', () => {
+            showSection('uploadSection');
+        });
+
+        document.getElementById('backToHomeBtn').addEventListener('click', () => {
             showSection('uploadSection');
         });
 
