@@ -1,6 +1,8 @@
 # Party Planner - Guest Table Arranger
 
-A web application that helps you organize your guest list into tables for networking events. The app accepts CSV file uploads with guest information and creates visual circular table arrangements showing where each person will be seated.
+A web application that helps you organize your guest list into tables for networking events. The app accepts CSV file uploads with guest information and creates visual circular table arrangements showing where each person will be seated.  Also integrated with Stripe payments.
+
+Built during the Build-a-company hackathon at AGI House SF.
 
 ## Features
 
